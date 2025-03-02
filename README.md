@@ -1,6 +1,10 @@
 # Resume Builder
 
-A **Resume Builder** application that allows users to create, customize, and preview their resumes in real-time.
+A **Resume Builder** application in React that allows users to create, customize, and preview their resumes in real-time.
+
+## Live Url
+
+https://resume-experience.vercel.app/
 
 ## Features
 
