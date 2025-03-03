@@ -94,7 +94,7 @@
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #888;
 }
 
 .highlights-header {
@@ -132,7 +132,24 @@
   padding: 8px;
   width: 48%;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #888;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 8px;
+  transition: transform 0.4s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
 }
 
 /* Live Preview Section */

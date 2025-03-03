@@ -4,6 +4,12 @@ import "./App.css";
 const App = () => {
   const [experiences, setExperiences] = useState({});
 
+  const [openItems, setOpenItems] = useState({});
+
+  const toggleItem = (expId) => {
+    setOpenItems((prev) => ({ ...prev, [expId]: !prev[expId] }));
+  };
+
   const addExperience = () => {
     const id = `Experience ${Object.keys(experiences).length + 1}`;
     setExperiences((prev) => ({
@@ -56,7 +62,13 @@ const App = () => {
 
           {Object.entries(experiences).map(([expId, exp]) => (
             <div key={expId} className="experience-item">
-              <h3>{expId}</h3>
+              <h3 className="experience-header" onClick={() => toggleItem(expId)}>
+                <span className={`arrow ${openItems[expId] ? "open" : ""}`}>&#9660;</span>
+                {expId}
+              </h3>
+
+              {openItems[expId] && (
+              <>
               <input
                 type="text"
                 placeholder="Title"
@@ -101,6 +113,8 @@ const App = () => {
                   onChange={(e) => updateField(expId, "endDate", e.target.value)}
                 />
               </div>
+              </>
+              )}
             </div>
           ))}
         </div>
