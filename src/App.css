@@ -146,6 +146,7 @@
   font-size: 10px;
   margin-right: 8px;
   transition: transform 0.4s ease;
+  color: #888;
 }
 
 .arrow.open {
