@@ -72,6 +72,7 @@ const App = () => {
               <input
                 type="text"
                 placeholder="Title"
+                className="title"
                 value={exp.title}
                 onChange={(e) => updateField(expId, "title", e.target.value)}
               />
