@@ -175,8 +175,12 @@
 }
 
 .preview-header span {
-  color: #888;
+  color: #fff;
   margin: 0 8px;
+}
+
+.preview-header .slash {
+  color: #888;
 }
 
 .preview-body {

@@ -123,7 +123,7 @@ const App = () => {
         {/* Live Preview Section */}
         <div className="preview-section">
           <div className="preview-header">
-            <span>Home</span> <span>/</span> <span>Resume</span>
+            <span>Home</span> <span className="slash">/</span> <span>Resume</span>
           </div>
           <div className="preview-body">
             <h2>Experience</h2>
